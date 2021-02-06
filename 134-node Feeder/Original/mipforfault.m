@@ -1,6 +1,6 @@
   clear all
      clc
-load PP
+load P
 %    PP;%to get the measured voltage index 
 k = find(P);
 %% Y matrix
