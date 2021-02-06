@@ -1,0 +1,335 @@
+clear
+
+New object=circuit.ieee134 R1=0 X1=0.0001 R0=0 X0=0.0001
+~ basekv=13.8 Bus1=source pu=1.0
+
+
+
+New linecode.1 nphases=3 BaseFreq=60 Units=km
+~ rmatrix = [0.4272 | 0.06  0.4272 | 0.06  0.06  0.4272]
+~ xmatrix = [0.9609 | 0.4780  0.9609 | 0.450  0.5360  0.9609]
+
+
+New linecode.2 nphases=3 BaseFreq=60 Units=km
+~ rmatrix = [0.7567 | 0.06  0.7567 | 0.06  0.06  0.7567]
+~ xmatrix = [1.0067 | 0.4780  1.0067 | 0.450  0.5360  1.0067]
+
+
+New linecode.3 nphases=3 BaseFreq=60 Units=km
+~ rmatrix = [1.6440 | 0.06  1.6440 | 0.06  0.06  1.6440]
+~ xmatrix = [1.006 | 0.4780  1.0060 | 0.450  0.5360  1.0060]
+
+New linecode.4 nphases=3 BaseFreq=60 Units=km
+~ rmatrix = [1.0840 | 0.06  1.0840 | 0.06  0.06  1.0840]
+~ xmatrix = [0.998 | 0.4780  0.9980 | 0.450  0.5360  0.9980]
+
+New linecode.5 nphases=3 BaseFreq=60 Units=km
+~ rmatrix = [0.2900 | 0.1960 0.2900 | 0.1960  0.1960  0.2900]
+~ xmatrix = [1.9200 | 0.5300  1.9200 | 0.5300  0.5300 1.9200]
+
+
+New Line.L1000     Phases=3 Bus1=source      Bus2=1       LineCode=5   Length=1
+
+
+New Line.L1     Phases=3 Bus1=1      Bus2=2       LineCode=1   Length=0.9
+New Line.L2     Phases=3 Bus1=2       Bus2=3       LineCode=4   Length=0.05
+New Line.L3     Phases=3 Bus1=2       Bus2=4      LineCode=1  Length=0.1
+
+New Line.L333     Phases=3 Bus1=4      Bus2=5       LineCode=1   Length=0.04
+New Line.L4     Phases=3 Bus1=5       Bus2=6       LineCode=1   Length=0.2
+New Line.L5     Phases=3 Bus1=6       Bus2=7       LineCode=1   Length=0.2
+
+
+New Line.L6     Phases=3 Bus1=7       Bus2=8       LineCode=1   Length=0.2
+
+New Line.L7     Phases=3 Bus1=8     Bus2=9       LineCode=1   Length=0.01
+New Line.L8     Phases=3 Bus1=9       Bus2=10       LineCode=1   Length=0.05
+New Line.L9     Phases=3 Bus1=10       Bus2=11      LineCode=3   Length=0.1
+
+New Line.L10     Phases=3 Bus1=11      Bus2=12     LineCode=3   Length=0.06
+New Line.L11    Phases=3 Bus1=12       Bus2=13       LineCode=3   Length=0.03
+New Line.L12     Phases=3 Bus1=13       Bus2=14       LineCode=3   Length=0.16
+
+New Line.L13     Phases=3 Bus1=11      Bus2=15       LineCode=3   Length=0.03
+New Line.L14     Phases=3 Bus1=15      Bus2=16       LineCode=3   Length=0.01
+New Line.L15     Phases=3 Bus1=16       Bus2=17       LineCode=3   Length=0.02
+
+New Line.L16     Phases=3 Bus1=17      Bus2=18       LineCode=3   Length=0.04
+New Line.L17     Phases=3 Bus1=18       Bus2=19      LineCode=4   Length=0.04
+New Line.L18     Phases=3 Bus1=19       Bus2=20      LineCode=4   Length=0.05
+
+New Line.L19     Phases=3 Bus1=18     Bus2=21      LineCode=4   Length=0.150
+New Line.L20     Phases=3 Bus1=10       Bus2=22       LineCode=1   Length=0.03
+New Line.L21     Phases=3 Bus1=22       Bus2=23       LineCode=1  Length=0.07
+
+New Line.L22     Phases=3 Bus1=23    Bus2=24       LineCode=3   Length=0.05
+New Line.L23     Phases=3 Bus1=24      Bus2=25       LineCode=3   Length=0.02
+New Line.L24     Phases=3 Bus1=25       Bus2=26      LineCode=3   Length=0.03
+
+New Line.L25     Phases=3 Bus1=26      Bus2=27     LineCode=4   Length=0.060
+New Line.L26     Phases=3 Bus1=27       Bus2=28       LineCode=4   Length=0.04
+New Line.L27     Phases=3 Bus1=28       Bus2=29       LineCode=4   Length=0.02
+
+New Line.L28     Phases=3 Bus1=29      Bus2=30       LineCode=4   Length=0.120
+New Line.L29     Phases=3 Bus1=28      Bus2=31       LineCode=4   Length=0.02
+New Line.L30     Phases=3 Bus1=26       Bus2=32       LineCode=3   Length=0.02
+
+New Line.L31     Phases=3 Bus1=32      Bus2=33       LineCode=3   Length=0.005
+New Line.L32     Phases=3 Bus1=33       Bus2=34      LineCode=3   Length=0.025
+New Line.L33     Phases=3 Bus1=23       Bus2=35     LineCode=1   Length=0.010
+
+New Line.L34     Phases=3 Bus1=35     Bus2=36       LineCode=1   Length=0.070
+New Line.L35     Phases=3 Bus1=36       Bus2=37       LineCode=1   Length=0.010
+New Line.L36     Phases=3 Bus1=37       Bus2=38       LineCode=1   Length=0.010
+
+New Line.L37     Phases=3 Bus1=38     Bus2=39       LineCode=1  Length=0.070
+New Line.L38     Phases=3 Bus1=38       Bus2=40       LineCode=1   Length=0.100
+New Line.L39     Phases=3 Bus1=40       Bus2=41      LineCode=3   Length=0.06
+
+New Line.L40     Phases=3 Bus1=40      Bus2=42     LineCode=3   Length=0.05
+New Line.L41     Phases=3 Bus1=42       Bus2=43       LineCode=3   Length=0.010
+New Line.L42     Phases=3 Bus1=40       Bus2=44       LineCode=1   Length=0.030
+
+New Line.L43     Phases=3 Bus1=44      Bus2=45       LineCode=1   Length=0.040
+New Line.L44     Phases=3 Bus1=38      Bus2=46       LineCode=1   Length=0.060
+New Line.L45     Phases=3 Bus1=46      Bus2=47       LineCode=1   Length=0.020
+
+New Line.L46     Phases=3 Bus1=47      Bus2=48       LineCode=1   Length=0.120
+New Line.L47     Phases=3 Bus1=48       Bus2=49      LineCode=1   Length=0.05
+New Line.L48     Phases=3 Bus1=49       Bus2=50      LineCode=1   Length=0.020
+
+New Line.L49     Phases=3 Bus1=50      Bus2=51       LineCode=1   Length=0.170
+New Line.L50     Phases=3 Bus1=48       Bus2=52       LineCode=1   Length=0.100
+New Line.L51     Phases=3 Bus1=52      Bus2=53      LineCode=3   Length=0.06
+
+New Line.L52     Phases=3 Bus1=53     Bus2=54       LineCode=3   Length=0.030
+New Line.L53     Phases=3 Bus1=54       Bus2=55      LineCode=3   Length=0.130
+New Line.L54     Phases=3 Bus1=52       Bus2=56     LineCode=3   Length=0.020
+
+New Line.L55     Phases=3 Bus1=56      Bus2=57    LineCode=3   Length=0.080
+New Line.L56     Phases=3 Bus1=57       Bus2=58       LineCode=4   Length=0.050
+New Line.L57     Phases=3 Bus1=57       Bus2=59       LineCode=4   Length=0.060
+
+New Line.L58     Phases=3 Bus1=59      Bus2=60       LineCode=4   Length=0.020
+New Line.L59     Phases=3 Bus1=48      Bus2=61       LineCode=1   Length=0.040
+New Line.L60     Phases=3 Bus1=61       Bus2=62       LineCode=1   Length=0.010
+
+
+New Line.L61     Phases=3 Bus1=62      Bus2=63       LineCode=1   Length=0.05
+New Line.L62     Phases=3 Bus1=63       Bus2=64       LineCode=2   Length=0.03
+New Line.L63     Phases=3 Bus1=64      Bus2=65      LineCode=2   Length=0.02
+
+New Line.L64     Phases=3 Bus1=65      Bus2=66      LineCode=2   Length=0.03
+New Line.L65     Phases=3 Bus1=66       Bus2=67       LineCode=2   Length=0.02
+New Line.L66     Phases=3 Bus1=67       Bus2=68       LineCode=3   Length=0.03
+
+New Line.L67     Phases=3 Bus1=67      Bus2=69       LineCode=3   Length=0.02
+New Line.L68     Phases=3 Bus1=69       Bus2=70       LineCode=3   Length=0.02
+New Line.L69     Phases=3 Bus1=67      Bus2=71      LineCode=2   Length=0.05
+
+New Line.L70     Phases=3 Bus1=71      Bus2=72      LineCode=2   Length=0.04
+New Line.L71     Phases=3 Bus1=72       Bus2=73       LineCode=2   Length=0.04
+New Line.L72     Phases=3 Bus1=73       Bus2=74       LineCode=2   Length=0.02
+
+New Line.L73     Phases=3 Bus1=74     Bus2=75       LineCode=2   Length=0.110
+New Line.L74     Phases=3 Bus1=63       Bus2=76       LineCode=1  Length=0.02
+New Line.L75     Phases=3 Bus1=76       Bus2=77     LineCode=1   Length=0.03
+
+New Line.L76     Phases=3 Bus1=77      Bus2=78     LineCode=1   Length=0.05
+New Line.L77     Phases=3 Bus1=78       Bus2=79       LineCode=1   Length=0.07
+New Line.L78     Phases=3 Bus1=79       Bus2=80       LineCode=1   Length=0.07
+
+New Line.L79     Phases=3 Bus1=80      Bus2=81       LineCode=1   Length=0.03
+New Line.L80     Phases=3 Bus1=81      Bus2=82       LineCode=1   Length=0.03
+New Line.L81     Phases=3 Bus1=82       Bus2=83       LineCode=3   Length=0.05
+New Line.L811     Phases=3 Bus1=82       Bus2=84       LineCode=1   Length=0.05
+
+
+New Line.L82     Phases=3 Bus1=84       Bus2=85      LineCode=1   Length=0.03
+New Line.L83     Phases=3 Bus1=85       Bus2=128      LineCode=1   Length=0.02
+
+New Line.L84     Phases=3 Bus1=128     Bus2=86      LineCode=1   Length=0.03
+New Line.L85    Phases=3 Bus1=86       Bus2=87       LineCode=1   Length=0.02
+New Line.L86     Phases=3 Bus1=78       Bus2=88       LineCode=4   Length=0.130
+
+New Line.L87     Phases=3 Bus1=78     Bus2=89       LineCode=1   Length=0.05
+New Line.L88     Phases=3 Bus1=89       Bus2=90       LineCode=1   Length=0.05
+New Line.L89    Phases=3 Bus1=90       Bus2=91      LineCode=1   Length=0.180
+
+New Line.L90     Phases=3 Bus1=91      Bus2=92     LineCode=1   Length=0.02
+New Line.L91     Phases=3 Bus1=92       Bus2=93       LineCode=4   Length=0.03
+New Line.L92    Phases=3 Bus1=92       Bus2=94       LineCode=4   Length=0.07
+
+New Line.L93     Phases=3 Bus1=92      Bus2=95       LineCode=1   Length=0.100
+New Line.L94     Phases=3 Bus1=95      Bus2=96       LineCode=4   Length=0.04
+New Line.L95     Phases=3 Bus1=95       Bus2=97       LineCode=4   Length=0.05
+
+New Line.L96     Phases=3 Bus1=97      Bus2=98       LineCode=4   Length=0.06
+New Line.L97     Phases=3 Bus1=98       Bus2=99      LineCode=3   Length=0.110
+New Line.L98     Phases=3 Bus1=98       Bus2=100     LineCode=4   Length=0.04
+
+New Line.L99     Phases=3 Bus1=100      Bus2=101       LineCode=4   Length=0.110
+New Line.L100     Phases=3 Bus1=95       Bus2=102       LineCode=1   Length=0.06
+New Line.L101     Phases=3 Bus1=102       Bus2=103      LineCode=1   Length=0.04
+
+New Line.L102     Phases=3 Bus1=103    Bus2=104      LineCode=2   Length=0.03
+New Line.L103     Phases=3 Bus1=103       Bus2=105       LineCode=2   Length=0.150
+New Line.L104     Phases=3 Bus1=105       Bus2=106      LineCode=2   Length=0.210
+
+New Line.L105     Phases=3 Bus1=106      Bus2=107     LineCode=2   Length=0.03
+New Line.L106     Phases=3 Bus1=107       Bus2=108       LineCode=2   Length=0.100
+New Line.L107     Phases=3 Bus1=108      Bus2=109       LineCode=3   Length=0.100
+
+New Line.L108     Phases=3 Bus1=109      Bus2=110       LineCode=3   Length=0.03
+New Line.L109     Phases=3 Bus1=110     Bus2=111       LineCode=3   Length=0.02
+New Line.L110     Phases=3 Bus1=107       Bus2=112       LineCode=1   Length=0.170
+
+New Line.L111     Phases=3 Bus1=112      Bus2=113       LineCode=1   Length=0.110
+New Line.L112     Phases=3 Bus1=113       Bus2=114      LineCode=3   Length=0.110
+New Line.L113     Phases=3 Bus1=113       Bus2=115      LineCode=3   Length=0.200
+
+New Line.L114     Phases=3 Bus1=115      Bus2=116       LineCode=3   Length=0.200
+New Line.L115     Phases=3 Bus1=116       Bus2=117       LineCode=3   Length=0.200
+New Line.L116     Phases=3 Bus1=117      Bus2=118      LineCode=3   Length=0.200
+
+New Line.L117     Phases=3 Bus1=90     Bus2=119       LineCode=4   Length=0.110
+New Line.L118     Phases=3 Bus1=119      Bus2=120      LineCode=3   Length=0.07
+New Line.L119     Phases=3 Bus1=120      Bus2=121     LineCode=1   Length=0.07
+
+New Line.L120     Phases=3 Bus1=119      Bus2=122    LineCode=4   Length=0.07
+
+
+New Line.L121     Phases=3 Bus1=122      Bus2=123     LineCode=3   Length=0.130
+New Line.L122     Phases=3 Bus1=123       Bus2=124       LineCode=3   Length=0.02
+New Line.L123     Phases=3 Bus1=123      Bus2=125       LineCode=3   Length=0.02
+
+New Line.L124     Phases=3 Bus1=125      Bus2=126       LineCode=3   Length=0.04
+New Line.L125     Phases=3 Bus1=126     Bus2=127       LineCode=3   Length=0.04
+New Line.L126     Phases=3 Bus1=128       Bus2=129       LineCode=4   Length=0.06
+
+New Line.L127     Phases=3 Bus1=104      Bus2=130       LineCode=2  Length=0.07
+New Line.L128     Phases=3 Bus1=130       Bus2=131      LineCode=1   Length=0.02
+New Line.L129     Phases=3 Bus1=130       Bus2=132      LineCode=2   Length=0.100
+
+New Line.L130     Phases=3 Bus1=132      Bus2=133       LineCode=2   Length=0.04
+New Line.L131    Phases=3 Bus1=133       Bus2=134       LineCode=2   Length=0.04
+
+
+
+
+New Load.S1   Bus1=3    Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+New Load.S2   Bus1=5    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S3   Bus1=6    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S4   Bus1=7    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S5   Bus1=8    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S6   Bus1=9    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S666   Bus1=12    Phases=3    Model=2 kV=13.8   kva=8.6  pf=0.92
+New Load.S7   Bus1=13    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S8   Bus1=14    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S9   Bus1=15    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S10   Bus1=16    Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+New Load.S11   Bus1=17    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S12   Bus1=19    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S13   Bus1=20    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S14   Bus1=21    Phases=3    Model=2 kV=13.8   kva=112.5 pf=0.92
+New Load.S15   Bus1=22    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S16   Bus1=24    Phases=3    Model=2 kV=13.8   kva=3  pf=0.92
+New Load.S17   Bus1=25    Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+New Load.S18   Bus1=27    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S19   Bus1=29    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S20   Bus1=30    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S21   Bus1=31   Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S22   Bus1=32    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S23   Bus1=33    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S24   Bus1=34    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S25   Bus1=36    Phases=3    Model=2 kV=13.8   kva=12.4  pf=0.92
+New Load.S26   Bus1=37    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S27   Bus1=39    Phases=3    Model=2 kV=13.8   kva=3  pf=0.92
+New Load.S28   Bus1=41    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S29   Bus1=42    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S30   Bus1=43    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S31   Bus1=44    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S32   Bus1=45    Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+New Load.S33   Bus1=46    Phases=3    Model=2 kV=13.8   kva=1  pf=0.92
+New Load.S34   Bus1=47    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S35   Bus1=49    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S36   Bus1=50    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S37   Bus1=51    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S38   Bus1=53    Phases=3    Model=2 kV=13.8   kva=1.2  pf=0.92
+New Load.S39   Bus1=54    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S40   Bus1=55    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S41   Bus1=56    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S42   Bus1=69   Phases=3    Model=2 kV=13.8   kva=7  pf=0.92
+New Load.S43   Bus1=70    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S44   Bus1=71    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S45   Bus1=72    Phases=3    Model=2 kV=13.8   kva=8.5  pf=0.92
+New Load.S46   Bus1=73    Phases=3    Model=2 kV=13.8   kva=1.9  pf=0.92
+New Load.S47   Bus1=74    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S48   Bus1=75    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+
+New Load.S49   Bus1=76    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S50   Bus1=77    Phases=3    Model=2 kV=13.8   kva=5.9  pf=0.92
+New Load.S51   Bus1=79    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S52   Bus1=80    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S53   Bus1=81    Phases=3    Model=2 kV=13.8   kva=112.7 pf=0.92
+New Load.S54   Bus1=83    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S55   Bus1=84    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S56   Bus1=85    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S57   Bus1=86    Phases=3    Model=2 kV=13.8   kva=15.5  pf=0.92
+New Load.S58   Bus1=87    Phases=3    Model=2 kV=13.8   kva=75 pf=0.92
+New Load.S59   Bus1=88    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S60   Bus1=89    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S61   Bus1=91    Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+New Load.S62   Bus1=93    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S63   Bus1=94    Phases=3    Model=2 kV=13.8   kva=23.5 pf=0.92
+New Load.S64   Bus1=96    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S65   Bus1=97    Phases=3    Model=2 kV=13.8   kva=6  pf=0.92
+
+New Load.S66   Bus1=99    Phases=3    Model=2 kV=13.8   kva=23.5  pf=0.92
+New Load.S67   Bus1=100    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S68   Bus1=101    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S69   Bus1=102    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S70   Bus1=104    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S71   Bus1=105    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S72   Bus1=106    Phases=3    Model=2 kV=13.8   kva=108.5  pf=0.92
+New Load.S73   Bus1=109    Phases=3    Model=2 kV=13.8   kva=108.5  pf=0.92
+New Load.S74   Bus1=110    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S75   Bus1=111    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S76   Bus1=112    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S77   Bus1=115    Phases=3    Model=2 kV=13.8   kva=30  pf=0.92
+New Load.S78   Bus1=116    Phases=3    Model=2 kV=13.8   kva=30  pf=0.92
+New Load.S79   Bus1=117    Phases=3    Model=2 kV=13.8   kva=30  pf=0.92
+New Load.S80   Bus1=118    Phases=3    Model=2 kV=13.8   kva=30  pf=0.92
+New Load.S81   Bus1=121    Phases=3    Model=2 kV=13.8   kva=30  pf=0.92
+New Load.S82   Bus1=122    Phases=3    Model=2 kV=13.8   kva=55  pf=0.92
+New Load.S83   Bus1=58   Phases=3    Model=2 kV=13.8   kva=10  pf=0.92
+New Load.S84   Bus1=59    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S85   Bus1=60    Phases=3    Model=2 kV=13.8   kva=3.8  pf=0.92
+New Load.S86   Bus1=61    Phases=3    Model=2 kV=13.8   kva=3  pf=0.92
+New Load.S87   Bus1=62    Phases=3    Model=2 kV=13.8   kva=5.5  pf=0.92
+New Load.S88   Bus1=64    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S89   Bus1=65    Phases=3    Model=2 kV=13.8   kva=75  pf=0.92
+New Load.S90   Bus1=66    Phases=3    Model=2 kV=13.8   kva=3.5  pf=0.92
+New Load.S91   Bus1=68    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S92   Bus1=124    Phases=3    Model=2 kV=13.8   kva=15.5  pf=0.92
+New Load.S93   Bus1=125    Phases=3    Model=2 kV=13.8   kva=15.5  pf=0.92
+New Load.S94   Bus1=126   Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+New Load.S95  Bus1=127    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S96   Bus1=129    Phases=3    Model=2 kV=13.8   kva=45  pf=0.92
+
+New Load.S97   Bus1=131    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S98   Bus1=133    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+New Load.S99   Bus1=134    Phases=3    Model=2 kV=13.8   kva=112.5  pf=0.92
+
+
+
+
+
+
+
+Set VoltageBases = "13.8 0.48"
+CalcVoltageBases
+
+
+solve
+
