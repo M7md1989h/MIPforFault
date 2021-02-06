@@ -8,7 +8,7 @@ To run all the codes succeesfully you need to have CVX (Mosek,Gorubi) and OpenDS
 # Citation is required
 If you find this code useful for your research, please cite
 
-@inproceedings{alburidy2020admm,
+@inproceedings{Mohammed2021MIP,
   title={Mixed Integer Programming Formulation for Fault Identification based on MicroPMUs},
   author={Alqahtani, Mohammed, Miao, Zhixin  and Fan, Lingling},
   journal={International Transactions on Electrical Energy Systems},
